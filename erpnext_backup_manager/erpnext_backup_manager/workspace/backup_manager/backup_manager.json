@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"header_backup\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Backup Manager</b></span>\",\"col\":12}},{\"id\":\"shortcut_backup_import\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Backup Import\",\"col\":4}},{\"id\":\"shortcut_backup_export\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Backup Export\",\"col\":4}},{\"id\":\"shortcut_backup_archive\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Backup Archive\",\"col\":4}}]",
+ "content": "[{\"id\":\"header_backup\",\"type\":\"header\",\"data\":{\"text\":\"<span class=h4><b>Backup Manager</b></span>\",\"col\":12}},{\"id\":\"shortcut_backup\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Backup\",\"col\":6}},{\"id\":\"shortcut_backup_archive\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Backup Archive\",\"col\":6}}]",
  "creation": "2025-12-25 00:00:00.000000",
  "custom_blocks": [],
  "docstatus": 0,
@@ -23,17 +23,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Backup Import",
-   "link_count": 0,
-   "link_to": "backup-center",
-   "link_type": "Page",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Backup Export",
+   "label": "Backup",
    "link_count": 0,
    "link_to": "backup-center",
    "link_type": "Page",
@@ -70,16 +60,9 @@
   {
    "color": "Dark Grey",
    "doc_view": "",
-   "label": "Backup Import",
+   "label": "Backup",
    "type": "URL",
-   "url": "/app/backup-center?section=import"
-  },
-  {
-   "color": "Dark Grey",
-   "doc_view": "",
-   "label": "Backup Export",
-   "type": "URL",
-   "url": "/app/backup-center?section=export"
+   "url": "/app/backup-center"
   },
   {
    "color": "Blue",
