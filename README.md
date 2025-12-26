@@ -36,29 +36,29 @@ pre-restore safety snapshots.
 
 OPERATIONAL FLOW
 ┌────────────────────────────────────────────────────────────┐
-│              ERPNext/Frappe Instance                      │
-│         (Running bench environment)                       │
+│              ERPNext/Frappe Instance                       │
+│         (Running bench environment)                        │
 └────────────┬───────────────────────────────────────────────┘
              │
              ▼
 ┌────────────────────────────────────────────────────────────┐
-│         Backup Manager Custom App                         │
-│  ┌──────────────────────────────────────────────┐         │
-│  │  Whitelisted API Endpoints                   │         │
-│  │  ├── create_backup()                         │         │
-│  │  ├── restore_from_archive()                  │         │
-│  │  ├── restore_from_upload()                   │         │
-│  │  └── list_archives()                         │         │
-│  └──────────────────────────────────────────────┘         │
+│         Backup Manager Custom App                          │
+│  ┌──────────────────────────────────────────────┐          │
+│  │  Whitelisted API Endpoints                   │          │
+│  │  ├── create_backup()                         │          │
+│  │  ├── restore_from_archive()                  │          │
+│  │  ├── restore_from_upload()                   │          │
+│  │  └── list_archives()                         │          │
+│  └──────────────────────────────────────────────┘          │
 └────────────┬───────────────────────────────────────────────┘
              │
              ▼
 ┌────────────────────────────────────────────────────────────┐
-│         Backup Storage Architecture                       │
-│  ┌────────────────┐  ┌────────────────┐  ┌─────────────┐ │
-│  │ Database SQL   │  │ Public Files   │  │Private Files│ │
-│  │ (.sql.gz)      │  │ (TAR archive)  │  │(TAR archive)│ │
-│  └────────────────┘  └────────────────┘  └─────────────┘ │
+│         Backup Storage Architecture                        │
+│  ┌────────────────┐  ┌────────────────┐  ┌─────────────┐   │
+│  │ Database SQL   │  │ Public Files   │  │Private Files│   │
+│  │ (.sql.gz)      │  │ (TAR archive)  │  │(TAR archive)│   │
+│  └────────────────┘  └────────────────┘  └─────────────┘   │
 │           │                  │                    │        │
 │           └──────────────────┴────────────────────┘        │
 │                             │                              │
