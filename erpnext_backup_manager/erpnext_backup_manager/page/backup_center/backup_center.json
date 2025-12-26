@@ -1,0 +1,19 @@
+{
+ "creation": "2025-12-25 00:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "octicon database",
+ "idx": 0,
+ "modified": "2025-12-25 00:00:00.000000",
+ "module": "ERPNext Backup Manager",
+ "name": "backup-center",
+ "owner": "Administrator",
+ "page_name": "backup-center",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "standard": "Yes",
+ "title": "Backup Center"
+}

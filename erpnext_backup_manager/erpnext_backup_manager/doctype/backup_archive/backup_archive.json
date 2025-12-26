@@ -1,0 +1,187 @@
+{
+ "actions": [],
+ "allow_import": 0,
+ "allow_rename": 0,
+ "creation": "2025-12-25 00:00:00.000000",
+ "default_print_format": "",
+ "disable_copy": 0,
+ "docstatus": 0,
+ "doctype": "DocType",
+ "editable_grid": 0,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "source",
+  "status",
+  "column_break_meta",
+  "created_on",
+  "created_by",
+  "files_section",
+  "db_file_path",
+  "db_size",
+  "public_file_path",
+  "public_size",
+  "private_file_path",
+  "private_size",
+  "bundle_file_path",
+  "bundle_size",
+  "config_file_path",
+  "restore_section",
+  "restore_log_path",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Source",
+   "options": "Manual\nPre-Restore\nUploaded"
+  },
+  {
+   "default": "Ready",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Ready\nRestoring\nRestored\nFailed"
+  },
+  {
+   "fieldname": "column_break_meta",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "created_on",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Created On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Created By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "files_section",
+   "fieldtype": "Section Break",
+   "label": "Backup Files"
+  },
+  {
+   "fieldname": "db_file_path",
+   "fieldtype": "Data",
+   "label": "DB File Path",
+   "read_only": 1
+  },
+  {
+   "fieldname": "db_size",
+   "fieldtype": "Int",
+   "label": "DB Size (bytes)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "public_file_path",
+   "fieldtype": "Data",
+   "label": "Public Files Path",
+   "read_only": 1
+  },
+  {
+   "fieldname": "public_size",
+   "fieldtype": "Int",
+   "label": "Public Size (bytes)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "private_file_path",
+   "fieldtype": "Data",
+   "label": "Private Files Path",
+   "read_only": 1
+  },
+  {
+   "fieldname": "private_size",
+   "fieldtype": "Int",
+   "label": "Private Size (bytes)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bundle_file_path",
+   "fieldtype": "Data",
+   "label": "Bundle Path",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bundle_size",
+   "fieldtype": "Int",
+   "label": "Bundle Size (bytes)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "config_file_path",
+   "fieldtype": "Data",
+   "label": "Site Config Path",
+   "read_only": 1
+  },
+  {
+   "fieldname": "restore_section",
+   "fieldtype": "Section Break",
+   "label": "Restore"
+  },
+  {
+   "fieldname": "restore_log_path",
+   "fieldtype": "Data",
+   "label": "Restore Log Path",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "has_web_view": 0,
+ "hide_toolbar": 0,
+ "index_web_pages_for_search": 0,
+ "inline": 0,
+ "is_submittable": 0,
+ "is_tree": 0,
+ "links": [],
+ "max_attachments": 0,
+ "modified": "2025-12-25 00:00:00.000000",
+ "module": "ERPNext Backup Manager",
+ "name": "Backup Archive",
+ "number_of_columns": 0,
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 0,
+   "cancel": 0,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 0,
+   "write": 1
+  }
+ ],
+ "quick_entry": 0,
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
