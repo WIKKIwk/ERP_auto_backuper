@@ -1,0 +1,93 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"header_backup\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Backup Manager</b></span>\",\"col\":12}},{\"id\":\"shortcut_backup_import\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Backup Import\",\"col\":4}},{\"id\":\"shortcut_backup_export\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Backup Export\",\"col\":4}},{\"id\":\"shortcut_backup_archive\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Backup Archive\",\"col\":4}}]",
+ "creation": "2025-12-25 00:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "octicon database",
+ "color": "#1f2937",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Backup Manager",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Backup Console",
+   "link_count": 3,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Backup Import",
+   "link_count": 0,
+   "link_to": "backup-center",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Backup Export",
+   "link_count": 0,
+   "link_to": "backup-center",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Backup Archive",
+   "link_count": 0,
+   "link_to": "Backup Archive",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-12-25 00:00:00.000000",
+ "module": "ERPNext Backup Manager",
+ "name": "Backup Manager",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "sequence_id": 50.0,
+ "shortcuts": [
+  {
+   "color": "Dark Grey",
+   "doc_view": "",
+   "label": "Backup Import",
+   "type": "URL",
+   "url": "/app/backup-center?section=import"
+  },
+  {
+   "color": "Dark Grey",
+   "doc_view": "",
+   "label": "Backup Export",
+   "type": "URL",
+   "url": "/app/backup-center?section=export"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Backup Archive",
+   "link_to": "Backup Archive",
+   "type": "DocType"
+  }
+ ],
+ "title": "Backup Manager"
+}
