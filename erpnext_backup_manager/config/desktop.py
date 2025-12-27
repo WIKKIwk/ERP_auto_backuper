@@ -8,7 +8,7 @@ def get_data():
 			"category": "Modules",
 			"label": "Backup Manager",
 			"color": "#1f2937",
-			"icon": "es-line-archive",
+			"icon": "es-line-storage",
 			"type": "module",
 			"description": "One-click backup, restore, and archive tools for ERPNext.",
 		}
