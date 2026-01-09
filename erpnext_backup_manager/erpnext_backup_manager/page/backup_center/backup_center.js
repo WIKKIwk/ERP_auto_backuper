@@ -522,10 +522,13 @@ erpnext_backup_manager.pages.BackupCenter = class BackupCenter {
 					if (!path || !url) {
 						return "";
 					}
-					const fileName = path.split("/").pop();
+					const rawPath = String(path || "");
+					const fileName = rawPath.split("/").pop() || rawPath;
+					const safeName = frappe.utils.escape_html(fileName);
+					const safeLabel = frappe.utils.escape_html(file.label);
 					const size = file.sizeKey ? formatSize(row[file.sizeKey]) : "";
 					const sizeLabel = size ? ` (${size})` : "";
-					return `<div><a href="${url}" target="_blank">${file.label}: ${fileName}</a>${sizeLabel}</div>`;
+					return `<div><a href="${url}" target="_blank">${safeLabel}: ${safeName}</a>${sizeLabel}</div>`;
 				})
 				.filter(Boolean)
 				.join("");
