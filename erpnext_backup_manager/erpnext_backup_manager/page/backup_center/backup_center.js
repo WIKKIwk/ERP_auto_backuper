@@ -36,11 +36,11 @@ erpnext_backup_manager.pages.BackupCenter = class BackupCenter {
 	_buildLayout() {
 		const styles = `
 			.backup-center-wrapper {
-				--backup-card-bg: var(--card-bg, #1f1f1f);
-				--backup-border: rgba(148, 163, 184, 0.25);
-				--backup-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
-				--backup-accent: var(--text-muted, #94a3b8);
-				--backup-muted: var(--text-muted, #94a3b8);
+				--backup-card-bg: var(--card-bg, #ffffff);
+				--backup-border: var(--border-color, #d1d8dd);
+				--backup-shadow: var(--shadow-sm, 0 6px 16px rgba(0, 0, 0, 0.08));
+				--backup-accent: var(--text-muted, #6b7280);
+				--backup-muted: var(--text-muted, #6b7280);
 				max-width: 1100px;
 				margin: 0 auto;
 				padding: 1.5rem 1.25rem 2.5rem;
@@ -58,15 +58,13 @@ erpnext_backup_manager.pages.BackupCenter = class BackupCenter {
 			.backup-card {
 				border: 1px solid var(--backup-border);
 				border-radius: 16px;
-				background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0))
-					, var(--backup-card-bg);
+				background: var(--backup-card-bg);
 				padding: 18px;
 				box-shadow: var(--backup-shadow);
 				transition: transform 0.2s ease, box-shadow 0.2s ease;
 			}
 			.backup-card:hover {
-				transform: translateY(-2px);
-				box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+				transform: translateY(-1px);
 			}
 			.backup-card h4 {
 				margin-top: 0;
@@ -82,20 +80,14 @@ erpnext_backup_manager.pages.BackupCenter = class BackupCenter {
 			}
 			.backup-card .form-control {
 				border-radius: 12px;
-				border: 1px solid rgba(148, 163, 184, 0.25);
-				background: var(--control-bg, rgba(15, 23, 42, 0.4));
+				border: 1px solid var(--backup-border);
+				background: var(--control-bg, #f7f7f7);
 			}
 			.backup-install-warning {
 				border-radius: 12px;
-				border: 1px solid rgba(239, 68, 68, 0.35);
-				background: rgba(239, 68, 68, 0.12);
-				color: var(--text-color, #f8fafc);
 			}
 			.backup-permission-warning {
 				border-radius: 12px;
-				border: 1px solid rgba(148, 163, 184, 0.35);
-				background: rgba(148, 163, 184, 0.12);
-				color: var(--text-color, #f8fafc);
 			}
 			.backup-install-warning.hide {
 				display: none;
@@ -129,13 +121,10 @@ erpnext_backup_manager.pages.BackupCenter = class BackupCenter {
 				overflow: hidden;
 			}
 			.backup-archive-table th {
-				background: rgba(148, 163, 184, 0.12);
+				background: var(--control-bg, #f7f7f7);
 			}
 			.backup-archive-table td {
 				vertical-align: top;
-			}
-			.backup-archive-table a {
-				color: var(--backup-accent);
 			}
 		`;
 

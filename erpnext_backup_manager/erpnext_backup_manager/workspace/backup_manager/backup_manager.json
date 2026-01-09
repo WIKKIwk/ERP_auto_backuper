@@ -8,7 +8,6 @@
  "for_user": "",
  "hide_custom": 0,
  "icon": "es-line-storage",
- "color": "#1f2937",
  "idx": 0,
  "is_hidden": 0,
  "label": "Backup Manager",
@@ -58,14 +57,12 @@
  "sequence_id": 50.0,
  "shortcuts": [
   {
-   "color": "Dark Grey",
    "doc_view": "",
    "label": "Backup",
    "type": "URL",
    "url": "/app/backup-center"
   },
   {
-   "color": "Blue",
    "doc_view": "List",
    "label": "Backup Archive",
    "link_to": "Backup Archive",
